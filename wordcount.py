@@ -27,7 +27,7 @@ def word_count(filename):
             word = word.rstrip('?!,.').lower()
             word_counts[word] = word_counts.get(word, 0) + 1
 
-    word_counts = sorted(word_counts.items(), key = lambda x: x[0], x[1], reverse = True)
+    word_counts = sorted(word_counts.items(), key = lambda x: (-x[1]x[0]))
     for word, word_counts in word_counts:
         print(word, word_counts)
 
